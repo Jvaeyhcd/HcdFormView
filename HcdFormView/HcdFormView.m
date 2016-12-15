@@ -50,7 +50,7 @@
     for (int i = 0; i < kColumn; i++) {
         FormCellView *view = [[FormCellView alloc]initWithFrame:CGRectMake(i * kWidth, 0, kWidth - kWidthMargin, kHeight - kHeightMargin)];
         view.detail = [NSString stringWithFormat:@"宝马i %d系列", i + 1];
-        view.font = [UIFont systemFontOfSize:14];
+        view.font = [UIFont systemFontOfSize:12];
         view.textColor = kColor333;
         view.backgroundColor = [UIColor whiteColor];
         [headView addSubview:view];
@@ -82,7 +82,7 @@
     [_leftTableView registerClass:[SingleFormCell class] forCellReuseIdentifier:kCellIdSingleFormCell];
     [self addSubview:_leftTableView];
     
-    _horizontalLine = [[UIView alloc]initWithFrame:CGRectMake(0, kHeight - 1, kWidth, 1)];
+    _horizontalLine = [[UIView alloc]initWithFrame:CGRectMake(0, kHeight - 1, kWidth * 0.8, 1)];
     _horizontalLine.backgroundColor = kBgColor;
     [self addSubview: _horizontalLine];
     
@@ -111,7 +111,7 @@
     for (int i = 0; i < column; i++) {
         FormCellView *view = [[FormCellView alloc]initWithFrame:CGRectMake(i * kWidth, 0, kWidth - kWidthMargin, kHeight - kHeightMargin)];
         view.detail = [NSString stringWithFormat:@"%@", self.columTitles[i]];
-        view.font = [UIFont systemFontOfSize:14];
+        view.font = [UIFont systemFontOfSize:12];
         view.textColor = kColor333;
         view.backgroundColor = [UIColor whiteColor];
         [_formHeadView addSubview:view];

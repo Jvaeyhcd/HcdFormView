@@ -65,7 +65,7 @@
         formCellView.delegate = self;
         formCellView.backgroundColor = [UIColor whiteColor];//[UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
         formCellView.detail = value;
-        formCellView.font = [UIFont systemFontOfSize:14];
+        formCellView.font = [UIFont systemFontOfSize:12];
         formCellView.textColor = kColor999;
         [self.contentView addSubview:formCellView];
     }

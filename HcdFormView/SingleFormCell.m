@@ -23,7 +23,7 @@
     if (self) {
         self.backgroundColor = kBgColor;
         _formCellView = [[FormCellView alloc]initWithFrame:CGRectMake(0, 0, kWidth * 0.8 - kWidthMargin, kHeight - kHeightMargin)];
-        _formCellView.font = [UIFont systemFontOfSize:14];
+        _formCellView.font = [UIFont systemFontOfSize:12];
         _formCellView.textColor = kColor333;
         [self.contentView addSubview:_formCellView];
     }
